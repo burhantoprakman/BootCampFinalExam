@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bt.bootcampfinalexam.genelkodActivities.uygulama_gelistirme_activities.AndroidUygulamaGelisirmeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="temelSql"
+                android:text="SORU 19-Temel SQL İşlemleri" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="webapi"
+                android:text="SORU 28-Web API Örneği" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="receiver"
+                android:text="SORU 31-Receiver Service Örneği" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="adimsayar"
+                android:text="SORU 39-Adım Sayar Örneği" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="firebase"
+                android:text="FireBase Login Ekranı Örneği" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

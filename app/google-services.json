@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "175257104609",
+    "firebase_url": "https://bootcamp-f38e1.firebaseio.com",
+    "project_id": "bootcamp-f38e1",
+    "storage_bucket": "bootcamp-f38e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175257104609:android:34e9d660eac5a870",
+        "android_client_info": {
+          "package_name": "bt.bootcampfinalexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175257104609-k4ccgeord0bk55ieaj1n4r3ed9u8ud4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUiPS0Jf5VOjHegUBQg5p-zLUSzwrUHXs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

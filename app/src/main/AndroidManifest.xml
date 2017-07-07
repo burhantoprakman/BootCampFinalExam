@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bt.bootcampfinalexam">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".genelkodActivities.uygulama_gelistirme_activities.AndroidUygulamaGelisirmeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".genelkodActivities.uygulama_gelistirme_activities.firebaselogin.LoginActivity" />
+        <activity android:name=".genelkodActivities.uygulama_gelistirme_activities.firebaselogin.SignupActivity" />
+        <activity android:name=".genelkodActivities.uygulama_gelistirme_activities.firebasegetdata.FirebaseGetDataActivity" />
+        <activity android:name=".genelkodActivities.uygulama_gelistirme_activities.TemelSQLSorusu.TemelSQLActivity" />
+        <activity android:name=".genelkodActivities.uygulama_gelistirme_activities.receiverservicesorusu.ReceiverActivity" />
+        <activity android:name=".genelkodActivities.uygulama_gelistirme_activities.adimsayar.AdimSayarActivity" />
+        <activity android:name=".genelkodActivities.uygulama_gelistirme_activities.firebaselogin.FirebaseActivity" />
+        <activity android:name=".genelkodActivities.uygulama_gelistirme_activities.TemelSQLSorusu.KisiOlustur"/>
+
+        <receiver
+            android:name=".genelkodActivities.uygulama_gelistirme_activities.receiverservicesorusu.MesajGeldiReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="numara" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".genelkodActivities.uygulama_gelistirme_activities.receiverservicesorusu.OpenSoundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <uses-feature
+            android:name="@string/step_detector"
+            android:required="false" />
+        <uses-feature
+            android:name="@string/step_counter"
+            android:required="false" />
+
+
+    </application>
+
+</manifest>
